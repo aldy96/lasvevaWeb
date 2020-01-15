@@ -1,0 +1,156 @@
+@-webkit-keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0) translateY(50%);
+            transform: scale(0) translateY(50%);
+  }
+  90% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0) translateY(50%);
+            transform: scale(0) translateY(50%);
+  }
+  90% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+  }
+}
+
+.containerK {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.card0 {
+  margin: auto;
+  position: relative;
+  width: 20em;
+  height: 20em;
+  overflow: hidden;
+  background-color: black;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.card0:hover {
+  -webkit-box-shadow: 0 10px 20px 10px rgba(2, 124, 191, 0.2);
+          box-shadow: 0 10px 20px 10px rgba(2, 124, 191, 0.2);
+}
+
+.card__link {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.card__icon {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 100%;
+  height: 4em;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  color: #027CBF;
+}
+
+.card0:hover .card__icon {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.card__media {
+  padding: 2em 0;
+  color: #A5DEF2;
+}
+
+.card__media .p1, .card__media .p2, .card__media .p3 {
+  opacity: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.card0:hover .card__media .p1 {
+  -webkit-animation: fadeInScale .1s ease-in-out forwards;
+          animation: fadeInScale .1s ease-in-out forwards;
+}
+
+.card0:hover .card__media .p2 {
+  -webkit-animation: fadeInScale .2s ease-in-out forwards;
+          animation: fadeInScale .2s ease-in-out forwards;
+}
+
+.card0:hover .card__media .p3 {
+  -webkit-animation: fadeInScale .3s ease-in-out forwards;
+          animation: fadeInScale .3s ease-in-out forwards;
+}
+
+.card__header {
+  position: relative;
+}
+
+.card__header-title {
+  margin: 0 0 .25em;
+  color: white;
+}
+
+.card__header-meta {
+  margin: 0;
+  color: #999;
+  border: white solid 1px;
+}
+
+.card__header-icon {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -1em;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+  width: 2em;
+  height: 2em;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border: white solid 1px;
+}
+
+.card0:hover .card__header-icon {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=kartu.css.map */
